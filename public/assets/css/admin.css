@@ -1,0 +1,253 @@
+
+.button{
+    padding: 10px 40px;
+    border-radius: 5px;
+    background: rgb(63 106 216);
+    border: none;
+    outline: none;
+    margin-top: 35px;
+    float: right;
+    color: white;
+}
+.title{
+    position: absolute;
+    bottom: -7px;
+    right: 8%;
+    color: black;
+    background: white;
+    padding: 4px 15px;
+    border-radius: 5px;
+}
+.msg_box{
+    background: #8ba3e1;
+    border-radius: 8px;
+    padding: 35px 20px;
+    position: relative;
+}
+.msg_box button{
+    border: none;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+.msg_box .msg_txt{
+    background-color: white;
+    color: black;
+    padding: 10px 8px;
+    border-radius: 4px;
+}
+.msg_box p{
+    margin-bottom: 8px;
+    color: white;
+    font-size: 16px;
+}
+.gallery_img{
+    border-radius: 15px;
+}
+.img_gl_box{
+    position: relative;
+}
+.img_gl_box button{
+    position: absolute;
+    top: 16px;
+    left: 36px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+.box {
+    display: block;
+    min-width: 100%;
+    height: 300px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+  }
+  .file-input{
+    width: 100px;
+  }
+  .nothing{
+    height: 241px;
+    width: 100%;
+    background: white;
+  }
+  .upload-options {
+    position: relative;
+    height: 75px;
+    background-color: cadetblue;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    transition: background-color ease-in-out 150ms;
+  }
+  .upload-options:hover {
+    background-color: #7fb1b3;
+  }
+  .upload-options input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  .upload-options label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .upload-options label::after {
+    content: "+";
+    font-family: "Material Icons";
+    position: absolute;
+    font-size: 2.5rem;
+    color: #e6e6e6;
+    top: calc(50% - 2.5rem);
+    left: calc(54% - 1.25rem);
+    z-index: 0;
+  }
+  .upload-options label span {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .upload-options label span:hover i.material-icons {
+    color: lightgray;
+  }
+
+  .js--image-preview {
+    height: 245px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: url("");
+    background-color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .js--image-preview::after {
+    font-family: "Material Icons";
+    position: relative;
+    font-size: 4.5em;
+    color: #e6e6e6;
+    top: calc(50% - 3rem);
+    left: calc(50% - 2.25rem);
+    z-index: 0;
+  }
+  .js--image-preview.js--no-default::after {
+    display: none;
+  }
+  .js--image-preview:nth-child(2) {
+    background-image: url("http://bastianandre.at/giphy.gif");
+  }
+
+  i.material-icons {
+    transition: color 100ms ease-in-out;
+    font-size: 2.25em;
+    line-height: 55px;
+    color: white;
+    display: block;
+  }
+
+  .drop {
+    display: block;
+    position: absolute;
+    background: rgba(95, 158, 160, 0.2);
+    border-radius: 100%;
+    transform: scale(0);
+  }
+
+  .animate {
+    -webkit-animation: ripple 0.4s linear;
+            animation: ripple 0.4s linear;
+  }
+
+  @-webkit-keyframes ripple {
+    100% {
+      opacity: 0;
+      transform: scale(2.5);
+    }
+  }
+
+  @keyframes ripple {
+    100% {
+      opacity: 0;
+      transform: scale(2.5);
+    }
+  }
+
+
+
+  .login__container{
+    width: 100%;
+    max-height: 90vh;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login__container form{
+    width: 450px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.8px solid gray;
+  }
+
+  .login__container form h1{
+    margin-bottom: 40px;
+  }
+
+  .login__container form input{
+    display: block;
+    width: 80%;
+    border: 0.5px solid rgb(203, 203, 203);
+    outline: none;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+
+  .login__container form button{
+    border: none;
+    padding: 16px 50px;
+    color: white;
+    background: black;
+    margin-top: 30px;
+  }
+
+  .head___txt{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+
+  .app-sidebar{
+    width: 340px !important;
+  }
