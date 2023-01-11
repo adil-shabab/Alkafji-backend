@@ -11,17 +11,22 @@ class HomeController extends Controller
     //
     function index(){
         if(session::has('user')){
-            // $messages =Contact::count();
-            // $projects =Projects::count();
-            // $gallery =Gallery::count();
-            // $threed =Threed::count();
-            // $interior =Interiorthreed::count();
-            // return view('admin.index', compact('gallery', 'messages', 'threed', 'projects', 'interior'));
             return view('admin.index');
         }
         else{
             return redirect('account/form/login');
         }
+    }
 
+    function home(){
+        return view('frontend.index');
+    }
+
+    function about(){
+        return view('frontend.about');
+    }
+
+    function contact(){
+        return view('frontend.contact');
     }
 }

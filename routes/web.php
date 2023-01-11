@@ -23,6 +23,12 @@ use App\Http\Controllers\FoodController;
 |
 */
 
+Route::get('', [HomeController::class, 'home']);
+Route::get('about', [HomeController::class, 'about']);
+Route::get('contact', [HomeController::class, 'contact']);
+
+
+
 Route::post('account/login', [UserController::class, 'login']);
 Route::get('account/form/login', [UserController::class, 'login_form']);
 Route::get('account/logout', [UserController::class, 'logout']);

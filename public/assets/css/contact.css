@@ -1,0 +1,555 @@
+:root {
+    --light_blue: #5bc7c9;
+    --dark_blue: #111E41;
+    --green: #60ba48;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.d-flex-full{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin: 0px !important;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.button{
+    outline: none;
+    background: var(--dark_blue);
+    color: white;
+    padding: 8px 18px;
+    width:156px;
+    border: 1px solid var(--dark_blue);
+    transition: 0.5s;
+    margin-top:5px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: white;
+    transition: 0.3s linear;
+    z-index: -1;
+}
+.button:hover::before{
+    width: 100%;
+    left: 0;
+    color: var(--dark_blue)
+}
+.button:hover{
+    color: var(--dark_blue);
+}
+
+/* top navbar  */
+header .top_navbar{
+    padding: 8px 0px;
+    background: var(--light_blue);
+    font-size: 15px;
+}
+header .top_navbar .left_box .p_i{
+    margin-right: 35px;
+}
+header .top_navbar .left_box i{
+    color: white;
+    margin-right: 8px;
+}
+header .top_navbar .left_box p{
+    color: white;
+}
+header .top_navbar .right_box i{
+    font-size: 18px;
+    margin-right: 15px;
+    color: white;
+}
+
+
+@media screen and (max-width: 992px) {
+    header .top_navbar .left_box .p_i p{
+        display: none;
+    }
+    header .top_navbar .left_box .p_i{
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 450px) {
+    header .top_navbar{
+        display: none;
+    }
+}
+
+
+header .navbar{
+    padding: 10px 0px;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+header .navbar .nav-item .nav-link{
+    color: var(--dark_blue);
+    margin-right: 10px;
+    font-size: 17px;
+}
+header .navbar .nav-item .nav-link.active{
+    color: var(--green);
+}
+header .navbar .menu_icon{
+    width: 32px;
+    display: none;
+}
+
+
+
+
+
+
+
+header .offcanvas{
+    width: 80%;
+}
+header .offcanvas .offcanvas-body{
+    margin-top: 0px;
+    padding: 30px;
+}
+header .offcanvas .offcanvas-header{
+    padding: 30px;
+}
+header .offcanvas .offcanvas-body ul{
+    padding: 5px;
+}
+header .offcanvas .offcanvas-body ul li a{
+    color: black;
+    font-size: 18px !important;
+}   
+header .offcanvas .offcanvas-body ul li a.active{
+    color: var(--green);
+}
+header .offcanvas .offcanvas-body ul li{
+    margin-bottom: 15px;
+}
+header .offcanvas .offcanvas-body .icon_offcanvas{
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+header .offcanvas .offcanvas-body .icon_offcanvas i{
+    margin-right: 20px;
+    font-size: 25px;
+    color: var(--green);
+}
+
+
+.ba__nn__er{
+    min-height: 320px;
+    position: relative;
+}
+.contact__bg{
+    background: rgb(236, 236, 236);
+    min-height: 250px;
+}
+.about__banner_bg{
+    background: url('../img/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 320px;
+    color: white;
+}
+.ba__nn__er h2{
+    font-size: 40px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: white;
+}
+.ba__nn__er span{
+    font-size: 18px;
+    color: white;
+}
+
+
+
+.contact__form{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    position: relative;
+}
+.contact__form .arrow{
+    position: absolute;
+    right: 8%;
+    bottom: 0%;
+    transform: rotate(270deg);
+    opacity: 0.6;
+}
+.contact__form .dots{
+    width: 200px;
+    position: absolute;
+    top: 13%;
+    left: 3%;
+    opacity: 0.6;
+}
+.contact__form .form_img{
+    position: absolute;
+    right: 5%;
+    top: 60px;
+}
+.contact__form .head__sm{
+    color: var(--green);
+    font-weight: bold;
+    font-size: 18px;
+}
+.contact__form .head__lg{
+    font-size: 36px;
+    color: var(--dark_blue);
+}
+.contact__form .dtls{
+    margin-top: 5px !important;
+}
+.contact__form .dtls_box{
+    width: 100%;
+    padding: 35px 20px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 22px;
+}
+.contact__form .dtls_box i{
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding: 15px;
+    color: var(--green);
+    background: #efefef;
+    border-radius: 50%;
+}
+.contact__form .dtls_box h5{
+    font-size: 25px;
+    color: var(--dark_blue);
+}
+.contact__form .form_section{
+    padding: 10px 25px;
+}
+.contact__form .form_section .in_put{
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    border: 0.5px solid rgb(193, 193, 193);
+    outline: none;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.contact__form .form_section .in_put.text_area{
+    height: 180px;
+}
+.contact__form .form_section .button{
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    background: var(--green);
+    margin-top: 10px;
+    border: 1px solid var(--green);
+    color: white;
+}
+.contact__form .form_section .button:hover{
+    color: var(--green);
+}
+
+.map_section iframe{
+    width: 100%;
+}
+.map_section{
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .contact__form .dots{
+        display: none;
+    }
+    .contact__form .form_section{
+        padding: 0px;
+    }
+    .contact__form .arrow{
+        bottom: -6%;
+    }
+    .contact__form .form_img{
+        top: -60px;
+    }
+    .contact__form .head__lg{
+        font-size: 28px;
+    }
+    header .navbar .menu_icon{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.about__section{
+    margin-top: 90px;
+    position: relative;
+}
+.about__section .dots{
+    position: absolute;
+    top: 18%;
+    left: 3%;
+}
+.about__section .head__sm{
+    color: var(--green);
+    font-weight: 600;
+    margin-bottom: 25px !important;
+    font-size: 18px;
+    text-align: center;
+}
+.about__section .head__lg{
+    font-size: 35px;
+    width: 50%;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 40px !important;
+    line-height: 50px;
+    margin: auto;
+}
+.about__section .about__para{
+    font-size: 21px;
+    color: gray;
+    width: 75%;
+    text-align: center;
+    margin: auto !important;
+    margin-bottom: 80px !important;
+}
+
+
+
+
+
+.mission__section{ 
+    margin-top: 120px !important;
+    margin-bottom: 80px;
+}
+.mission__section .head__sm{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--green);
+    margin-bottom: 50px !important;
+}
+.mission__section .box{
+    padding: 13px 13px 25px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    flex-direction: column;
+}
+.mission__section .mission__img{
+    margin-bottom: 30px;
+    /* width: 250px; */
+    border-radius: 10px;
+}
+.mission__section .box h4{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--light_blue);
+}
+.mission__section .box p{
+    font-size: 16px;
+    color: gray;
+}
+
+
+
+
+
+
+
+
+.cta__section{
+    margin-top: 80px;
+    height: 410px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(96,186,72);
+    background: radial-gradient(circle, rgba(96,186,72,0.2920518549216562) 15%, rgba(17,30,65,0.269642891336222) 87%);
+}
+.cta__section .arrow{
+    position: absolute;
+    right: 26%;
+    top: 32%;
+}
+.cta__section .star{
+    position: absolute;
+    left: 23%;
+    bottom: 25%;
+}
+.cta__section .dots{
+    animation: dotsanimate infinite 3s;
+    position: absolute;
+    top: 21%;
+    left: 5%;
+}
+.cta__section .curved{
+    position: absolute;
+    right: 6%;
+    animation: dotsanimate infinite 2s;
+    bottom: 9%;
+}
+.cta__section h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.cta__section p{
+    color: gray;
+    font-size: 18px;
+}
+.cta__section button{
+    margin-top: 35px;
+}
+
+
+@keyframes dotsanimate {
+    0%,100%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    75%{
+        transform: translateY(10px);
+    }
+}
+
+
+
+
+
+
+
+
+.counter__section{
+    background: rgb(17,30,65);
+    background: linear-gradient(90deg, rgba(17,30,65,0.45451684091605393) 0%, rgba(17,30,65,0.5805672610841212) 41%);
+    color: white;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 200px;
+    border-radius: 25px;
+}
+.counter__section .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.counter__section h3{
+    font-size: 40px;
+}
+.counter__section p{
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* product page     */
+.product__banner_bg{
+    background: url('https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg?w=996&t=st=1672321702~exp=1672322302~hmac=96c5a30c489b258dce9ecdeb06489c6253d99fb03f2e2569f8fdd1c5c52fbb55');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.products__container{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.products__container .box{
+    display: flex;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+    align-items: center;
+    flex-direction: column;
+    border: 0.5px solid #60ba48;
+}
+.products__container .box h5{
+    background: #60ba48;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+}
+.products__container .box img{
+    width: 300px;
+    object-fit: cover;
+    height: 250px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .about__section .about__para{
+        font-size: 15px;
+        width: 100%;
+    }
+    .about__section .head__lg{
+        font-size: 24px;
+        line-height: 35px;
+        width: 100%;
+    }
+    .cta__section .curved{
+        display: none;
+    }
+    .cta__section .star{
+        display: none;
+    }
+    .cta__section p{
+        font-size: 16px;
+    }
+}
