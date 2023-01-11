@@ -14,8 +14,8 @@
     bottom: -7px;
     right: 8%;
     color: black;
-    background: white;
-    padding: 4px 15px;
+    background: #c2c2c2;
+    padding: 9px 33px;
     border-radius: 5px;
 }
 .msg_box{
@@ -245,9 +245,4 @@
     text-transform: uppercase;
     margin-bottom: 25px;
     text-align: center;
-  }
-
-
-  .app-sidebar{
-    width: 340px !important;
   }

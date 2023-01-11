@@ -383,7 +383,7 @@ footer{
     position: relative;
     z-index: 2;
   }
-  
+
   .quote_content {
     position: relative;
     z-index: 2;
@@ -404,7 +404,7 @@ footer{
     margin-bottom: 25px;
     font-family: "Open Sans", sans-serif;
   }
-  
+
 
   .common_btn{
     border-style: none;
@@ -570,7 +570,7 @@ footer{
     color: goldenrod;
     font-size: 10px;
 }
-  
+
 /* testimonial css end */
 
 
@@ -641,4 +641,71 @@ footer{
     .client-section{
         padding: 10px;
     }
+    .carousel-caption h5{
+        display: block;
+        font-size: 30px !important;
+        line-height: 34px !important;
+        font-weight: 600 !important;
+    }
+}
+
+
+
+/* factoriessection */
+
+
+.factories-section{
+    padding: 100px 10px;
+}
+
+.factories-card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 30px 15px;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.factories-map{
+    height: 260px;
+}
+
+.fatories-dtls .phone{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.fatories-dtls .phone i{
+    color: var(--green);
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.fatories-dtls .phone a{
+    color: #000;
+}
+
+.fatories-dtls .mail i{
+    color: var(--green);
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.fatories-dtls .mail a{
+    color: #000;
+}
+
+.fatories-dtls .location{
+    display: flex;
+
+}
+
+.fatories-dtls .location i{
+    margin-right: 5px;
+    color: var(--green);
+    font-size: 20px;
 }

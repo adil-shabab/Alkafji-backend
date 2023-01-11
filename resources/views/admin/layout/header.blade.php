@@ -1,6 +1,6 @@
 <div class="app-header header-shadow">
     <div class="app-header__logo">
-        <img style="width: 120px; height: 35px;" src="{{ url('assets/images/logo/ftr-logo.png') }}" alt="logo">
+        <img style="height: 40px; margin: auto;" src="{{ url('assets/img/logo/logo.png') }}" alt="logo">
         <div class="header__pane ml-auto">
             <div>
                 <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">

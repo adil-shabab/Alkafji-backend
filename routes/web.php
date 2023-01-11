@@ -10,6 +10,7 @@ use App\Http\Controllers\ProtectionController;
 use App\Http\Controllers\FoamController;
 use App\Http\Controllers\AluminiumController;
 use App\Http\Controllers\FoodController;
+use App\Http\Controllers\ContactController;
 
 
 /*
@@ -26,6 +27,19 @@ use App\Http\Controllers\FoodController;
 Route::get('', [HomeController::class, 'home']);
 Route::get('about', [HomeController::class, 'about']);
 Route::get('contact', [HomeController::class, 'contact']);
+Route::get('product/paper', [HomeController::class, 'paper']);
+Route::get('product/plastic', [HomeController::class, 'plastic']);
+Route::get('product/aluminium', [HomeController::class, 'aluminium']);
+Route::get('product/foam', [HomeController::class, 'foam']);
+Route::get('product/food', [HomeController::class, 'food']);
+Route::get('product/hygiene', [HomeController::class, 'protection']);
+
+
+Route::post('sent/message', [ContactController::class, 'store']);
+Route::get('account/messages', [ContactController::class, 'messages']);
+Route::get('account/form-message', [ContactController::class, 'message_form']);
+Route::delete('account/delete-message/{id}', [ContactController::class, 'destroy']);
+
 
 
 

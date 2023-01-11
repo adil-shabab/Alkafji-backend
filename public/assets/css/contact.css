@@ -140,7 +140,7 @@ header .offcanvas .offcanvas-body ul{
 header .offcanvas .offcanvas-body ul li a{
     color: black;
     font-size: 18px !important;
-}   
+}
 header .offcanvas .offcanvas-body ul li a.active{
     color: var(--green);
 }
@@ -355,7 +355,7 @@ header .offcanvas .offcanvas-body .icon_offcanvas i{
 
 
 
-.mission__section{ 
+.mission__section{
     margin-top: 120px !important;
     margin-bottom: 80px;
 }

@@ -20,85 +20,7 @@
 
 <body>
   <header>
-
-    <!-- place navbar here -->
-    <div class="top_navbar">
-        <div class="container">
-            <div class="d-flex justify-content-between">
-                <div class="left_box d-flex">
-                    <div class="d-flex-full p_i">
-                        <i class="fa-solid fa-phone"></i>
-                        <p>+919876543210</p>
-                    </div>
-                    <div class="d-flex-full p_i">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p>alkhajfi@gmail.com</p>
-                    </div>
-                    <div class="d-flex-full p_i">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>Calicut, Kerala</p>
-                    </div>
-                </div>
-                <div class="right_box">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
-          <a class="navbar-brand navbar-logo" href=""><img src="assets/img/logo/logo-1.png" alt=""></a>
-          <img data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" src="assets/img/menu.png" alt="" class="menu_icon">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" id="home_nav" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="about_nav" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="product_nav" href="product.html">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " id="contact_nav" href="contact.html">Contact</a>
-              </li>
-              <a href="contact.html"><button class="button mt-0 py-2 ms-3" style="padding: 10px;">Enquire</button></a>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-
-
-
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="assets/img/logo/logo.png" alt=""></h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="d-flex icon_offcanvas">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-          </div>
-        </div>
-      </div>
+  {{View::make('frontend/layout/header')}}
     </header>
 
   <main>
@@ -131,11 +53,12 @@
           </div>
         </div>
         <div class="order-md-2 order-1 d-flex-full col-md-7">
-          <form class="form_section">
+          <form method="POST" action="{{ url('sent/message') }}" enctype="multipart/form-data" class="form_section">
+           @csrf
             <input type="text" name="name" placeholder="Enter Your Name" class="in_put">
             <input type="email" name="email" placeholder="Enter Your Email" class="in_put">
             <input type="tel" name="number" placeholder="Enter Your Number" class="in_put">
-            <input type="text" name="message" placeholder="Message" class="in_put text_area">
+            <input type="text" name="content" placeholder="Message" class="in_put text_area">
             <button class="button" type="submit">Send</button>
           </form>
         </div>
@@ -154,53 +77,7 @@
 
     <!-- footer -->
     <footer>
-      <div class="footer-div">
-          <div class="container">
-          <div class="row">
-              <div class="col-lg-3 col-md-4 col-12 mt-md-5 mt-3">
-                <a href="index.html">
-                  <img class="footer-logo" src="assets/img/logo/logo-1.png" alt="">
-                </a>
-                <p class="footer-desc">Lorem ipsum dolor nobis eum facere, dolorum est cumque ducimus distinctio? Fugit, voluptas hic!</p>
-              </div>
-              <div class="col-lg-3 col-md-3 col-6 mt-md-5 mt-3">
-                <p class="ftr-links-head">Quick Links</p>
-                  <a href="index.html" class="footer-links">Home</a>
-                  <a href="about.html" class="footer-links">About</a>
-                  <a href="product.html" class="footer-links">Products</a>
-              </div>
-              <div class="col-lg-3 col-md-3 col-6 mt-md-5 mt-3">
-                <p class="ftr-links-head">Quick Links</p>
-                  <a href="#" class="footer-links">Factory</a>
-                  <a href="#" class="footer-links">Contact</a>
-                  <a href="#" class="footer-links">Terms & Conditions</a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-12 mt-md-5 mt-3">
-                <p class="ftr-links-head">Address</p>
-                  <p class="footer-desc">Office 19C11, I-Rise Tower, <br>
-                  Barsha Heights, Dubai, <br>
-                  UAE, PO BOX 336173</p>
-                  <div class="footer-social-media-icons mt-md-4 mt-3">
-                      <a href="#"><i class="fa-brands fa-instagram ftr-sm-icons"></i></a>
-                      <a href="#"><i class="fa-brands fa-facebook-f ftr-sm-icons"></i></a>
-                      <a href="#"><i class="fa-brands fa-twitter ftr-sm-icons"></i></a>
-                      <a href="#"><i class="fa-brands fa-youtube ftr-sm-icons"></i></a>
-                      <a href="#"><i class="fa-brands fa-pinterest-p ftr-sm-icons"></i></a>
-                  </div>
-              </div>
-          </div>
-          <div class="ftr-bottom-line mt-4">
-            <hr class="w-100">
-          </div>
-          <div class="ftr-bottom-section">
-              <div class="row">
-                  <div class="col-12">
-                      <p  style="color: rgb(0, 0, 0);">© 2022 lorem ipsum dolor  elite ghgd hgbjhbjkb vgvjvb</p>
-                  </div>
-              </div>
-          </div>
-          </div>
-        </div>
+    {{View::make('frontend/layout/footer')}}
     </footer>
 
 
@@ -208,6 +85,28 @@
     <script>
       document.getElementById('contact_nav').classList.add('active')
     </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        @if($message = session('success'))
+        swal(
+        'Success',
+        "{{$message}}",
+        'success'
+        )
+        @endif
+        @if($error_msg = session('error'))
+        swal(
+        'Error',
+        "{{$error_msg}}",
+        'error'
+        )
+        @endif
+    </script>
+
 
 
   <!-- Bootstrap JavaScript Libraries -->

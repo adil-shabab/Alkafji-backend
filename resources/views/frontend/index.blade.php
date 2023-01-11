@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <link href="" rel="canonical">
+  <meta property="og:locale" content="en-US">
+  <meta property="og:title" content="Best plastic packs and  foodstuff trading l.l.c alkhafji | uae | ajman | Ras Al Khaimah">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="We are the best plastic packs and  foodstuff trading l.l.c">
+  <meta property="og:site_name" content="Alkhafji">
+
+
     <title>HOME | AL KHAFJI</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -23,86 +33,7 @@
 
 <body>
     <header>
-
-    <!-- place navbar here -->
-    <div class="top_navbar">
-        <div class="container">
-            <div class="d-flex justify-content-between">
-                <div class="left_box d-flex">
-                    <div class="d-flex-full p_i">
-                        <i class="fa-solid fa-phone"></i>
-                        <p>+919876543210</p>
-                    </div>
-                    <div class="d-flex-full p_i">
-                        <i class="fa-solid fa-envelope"></i>
-                        <p>alkhajfi@gmail.com</p>
-                    </div>
-                    <div class="d-flex-full p_i">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <p>Calicut, Kerala</p>
-                    </div>
-                </div>
-                <div class="right_box">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
-          <a class="navbar-brand navbar-logo" href=""><img src="assets/img/logo/logo-1.png" alt=""></a>
-          <img data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" src="assets/img/menu.png" alt="" class="menu_icon">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" id="home_nav" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="about_nav" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="product_nav" href="product.html">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " id="contact_nav" href="contact.html">Contact</a>
-              </li>
-              <a href="contact.html"><button class="button mt-0 py-2 ms-3" style="padding: 10px;">Enquire</button></a>
-
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-
-
-
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="assets/img/logo/logo.png" alt=""></h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="d-flex icon_offcanvas">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-          </div>
-        </div>
-      </div>
+    {{View::make('frontend/layout/header')}}
     </header>
     <main>
 
@@ -116,23 +47,20 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="assets/img/carousel/carousel-3.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-md-block d-none">
           <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="assets/img/carousel/carousel-1.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption  d-md-block d-none">
           <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="assets/img/carousel/carousel-2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption  d-md-block d-none">
           <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
         </div>
       </div>
     </div>
@@ -303,6 +231,105 @@
 
     </div>
   </div>
+
+
+
+
+  <!-- factories section -->
+
+  <div class="factories-section">
+    <div class="mb-4">
+      <h3  class="main-head text-center"><span class="green">Factories</span></h3>
+      <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos neque dcupiditate vitae.</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-12 d-flex">
+          <div class="factories-card">
+            <div class="factories-map mb-3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.488167023148!2d55.96580601502079!3d25.75443458364006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x84b131b6191024dc!2zMjXCsDQ1JzE2LjAiTiA1NcKwNTgnMDQuOCJF!5e0!3m2!1sen!2sin!4v1673450375852!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="fatories-dtls">
+              <div class="phone">
+                <div>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  <a href="+971542172643">+971 542 172643</a>
+                </div>
+                <div>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  <a href="+97172081151">+971 720 81151</a>
+                </div>
+              </div>
+              <div class="mail my-3">
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:alkhafjirak3@gmail.com">mailto:alkhafjirak3@gmail.com</a>
+              </div>
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Near Nesto Super Market , Al Turfa Ras Al Khaimah - UAE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12 d-flex">
+          <div class="factories-card">
+            <div class="factories-map mb-3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.488167023148!2d55.96580601502079!3d25.75443458364006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x84b131b6191024dc!2zMjXCsDQ1JzE2LjAiTiA1NcKwNTgnMDQuOCJF!5e0!3m2!1sen!2sin!4v1673450375852!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="fatories-dtls">
+              <div class="phone">
+                <div>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  <a href="+971509006475">+971 50 900 6475</a>
+                </div>
+                <div>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  <a href="+971509657711">+971 50 965 7711</a>
+                </div>
+              </div>
+              <div class="mail my-3">
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:alkhafjirak3@gmail.com">mailto:alkhafjiuae@gmail.com</a>
+              </div>
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>13508, Ajman UAE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12 d-flex">
+          <div class="factories-card">
+            <div class="factories-map mb-3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3635.327528316175!2d54.48046521499256!3d24.335080984304387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x95b4604b5f060bab!2zMjTCsDIwJzA2LjMiTiA1NMKwMjgnNTcuNiJF!5e0!3m2!1sen!2sin!4v1673458320521!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+            <div class="fatories-dtls">
+              <div class="phone">
+                <div>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  <a href="+97125556961">+971 2555 6961</a>
+                </div>
+                <div>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  <a href="+971554206613">+971 55 420 6613</a>
+                </div>
+              </div>
+              <div class="mail my-3">
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:alkhafjirak3@gmail.com">mailto:alkhafj2ad@gmail.com</a>
+              </div>
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Musaffah Ind. Area Abu Dhabi - UAE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -488,53 +515,7 @@
     </main>
     <!-- footer -->
     <footer>
-      <div class="footer-div">
-          <div class="container">
-          <div class="row">
-              <div class="col-lg-3 col-md-4 col-12 mt-md-5 mt-3">
-                <a href="index.html">
-                  <img class="footer-logo" src="assets/img/logo/logo-1.png" alt="">
-                </a>
-                <p class="footer-desc">Lorem ipsum dolor nobis eum facere, dolorum est cumque ducimus distinctio? Fugit, voluptas hic!</p>
-              </div>
-              <div class="col-lg-3 col-md-3 col-6 mt-md-5 mt-3">
-                <p class="ftr-links-head">Quick Links</p>
-                  <a href="index.html" class="footer-links">Home</a>
-                  <a href="about.html" class="footer-links">About</a>
-                  <a href="product.html" class="footer-links">Products</a>
-              </div>
-              <div class="col-lg-3 col-md-3 col-6 mt-md-5 mt-3">
-                <p class="ftr-links-head">Quick Links</p>
-                  <a href="#" class="footer-links">Factory</a>
-                  <a href="#" class="footer-links">Contact</a>
-                  <a href="#" class="footer-links">Terms & Conditions</a>
-              </div>
-              <div class="col-lg-3 col-md-6 col-12 mt-md-5 mt-3">
-                <p class="ftr-links-head">Address</p>
-                  <p class="footer-desc">Office 19C11, I-Rise Tower, <br>
-                  Barsha Heights, Dubai, <br>
-                  UAE, PO BOX 336173</p>
-                  <div class="footer-social-media-icons mt-md-4 mt-3">
-                      <a href="#"><i class="fa-brands fa-instagram ftr-sm-icons"></i></a>
-                      <a href="#"><i class="fa-brands fa-facebook-f ftr-sm-icons"></i></a>
-                      <a href="#"><i class="fa-brands fa-twitter ftr-sm-icons"></i></a>
-                      <a href="#"><i class="fa-brands fa-youtube ftr-sm-icons"></i></a>
-                      <a href="#"><i class="fa-brands fa-pinterest-p ftr-sm-icons"></i></a>
-                  </div>
-              </div>
-          </div>
-          <div class="ftr-bottom-line mt-4">
-            <hr class="w-100">
-          </div>
-          <div class="ftr-bottom-section">
-              <div class="row">
-                  <div class="col-12">
-                      <p  style="color: rgb(0, 0, 0);">© 2022 lorem ipsum dolor  elite ghgd hgbjhbjkb vgvjvb</p>
-                  </div>
-              </div>
-          </div>
-          </div>
-        </div>
+    {{View::make('frontend/layout/footer')}}
     </footer>
 
 
@@ -545,6 +526,7 @@
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
     <!-- owl carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>

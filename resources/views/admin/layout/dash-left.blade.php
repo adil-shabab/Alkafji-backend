@@ -4,32 +4,36 @@
           <ul class="mt-4 vertical-nav-menu">
               <li class="app-sidebar__heading">Dashboards</li>
               <li>
+                  <a id="dashboard" class="mt-0" href="{{url('account')}}">
+                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-solid fa-box"></i>
+                      Dashboard
+                  </a>
                   <a id="plastic_page" class="mt-0" href="{{url('account/plastic')}}">
-                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-user"></i>
+                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-solid fa-box"></i>
                       Plastic Products
                   </a>
                   <a id="paper_page" class="mt-0" href="{{url('account/paper')}}">
-                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-user"></i>
+                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-solid fa-box"></i>
                       Paper Products
                   </a>
                   <a id="protection_page" class="mt-0" href="{{url('account/protection')}}">
-                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-message"></i>
+                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-solid fa-box"></i>
                       Hygiene & Protection Products
                   </a>
                   <a id="foam_page" href="{{ url('account/foam') }}" class="mt-0">
-                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-image"></i>
+                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-solid fa-box"></i>
                       Foam Products
                   </a>
                   <a id="aluminium_page" href="{{ url('account/aluminium') }}" class="mt-0">
-                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-image"></i>
+                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-solid fa-box"></i>
                       Aluminium Products
                   </a>
                   <a id="food_page" href="{{ url('account/food') }}" class="mt-0">
-                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-image"></i>
-                      Foood Products
+                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-solid fa-box"></i>
+                      Food Products
                   </a>
-                  <a id="message_page" href="#" class="mt-0 mb-2">
-                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-image"></i>
+                  <a id="message_page" href="{{ url('account/messages') }}" class="mt-0 mb-2">
+                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-solid fa-box"></i>
                       Messages
                   </a>
               </li>
