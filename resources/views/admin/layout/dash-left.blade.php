@@ -8,6 +8,10 @@
                       <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-solid fa-box"></i>
                       Dashboard
                   </a>
+                  <a id="best_page" class="mt-0" href="{{url('account/popular-products')}}">
+                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-solid fa-box"></i>
+                      Popular Products
+                  </a>
                   <a id="plastic_page" class="mt-0" href="{{url('account/plastic')}}">
                       <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-solid fa-box"></i>
                       Plastic Products
@@ -39,6 +43,12 @@
               </li>
 
               <li class="mt-3 app-sidebar__heading">FORMS</li>
+              <li>
+                  <a id="best_form" href="{{ url('account/form-best') }}" class="mb-0" >
+                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-plus"></i>
+                      Add Popular Product
+                  </a>
+              </li>
               <li>
                   <a id="plastic_form" href="{{ url('account/form-plastic') }}" class="mb-0" >
                       <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-plus"></i>

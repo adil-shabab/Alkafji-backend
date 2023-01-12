@@ -11,6 +11,7 @@ use App\Http\Controllers\FoamController;
 use App\Http\Controllers\AluminiumController;
 use App\Http\Controllers\FoodController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\BestController;
 
 
 /*
@@ -86,4 +87,10 @@ Route::get('account/food', [FoodController::class, 'index']);
 Route::get('account/form-food', [FoodController::class, 'food_form']);
 Route::post('account/add-food', [FoodController::class, 'store']);
 Route::delete('account/delete-food/{id}', [FoodController::class, 'destroy']);
+
+
+Route::get('account/popular-products', [BestController::class, 'index']);
+Route::get('account/form-best', [BestController::class, 'best_form']);
+Route::post('account/add-best', [BestController::class, 'store']);
+Route::delete('account/delete-best/{id}', [BestController::class, 'destroy']);
 
