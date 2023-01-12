@@ -11,6 +11,7 @@ use App\Models\Foam;
 use App\Models\Protection;
 use App\Models\Aluminium;
 use App\Models\Food;
+use App\Models\Best;
 
 
 class HomeController extends Controller
@@ -33,7 +34,8 @@ class HomeController extends Controller
     }
 
     function home(){
-        return view('frontend.index');
+        $product= Best::all();
+        return view('frontend.index', compact('product'));
     }
 
     function about(){

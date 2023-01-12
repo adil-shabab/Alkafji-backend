@@ -153,78 +153,15 @@
     <div class="best-products">
 
         <div class="row">
+          @foreach ($product as $data)
           <div class="mb-5 d-flex-full col-lg-3 col-md-4 col-6">
             <div data-aos="slide-up" data-aos-duration="400" class="product-box">
-              <img src="assets/img/product/food/Jalapeno-pepper-sliced.jpg" alt="" class="img-fluid">
-              <p>Jalapeno Pepper</p>
+              <img src="{{asset('/uploads/Best/'.$data->image)}}" alt="" class="img-fluid">
+              <p>{{$data->title}}</p>
             </div>
           </div>
-          <div class="mb-5 d-flex-full col-lg-3 col-md-4 col-6">
-            <div data-aos="slide-up" data-aos-duration="500" class="product-box">
-              <img src="assets/img/product/food/cheddar-cheese.jpg" alt="" class="img-fluid">
-              <p>Cheddar Cheese Sauce</p>
-            </div>
-          </div>
-          <div class="mb-5 d-flex-full col-lg-3 col-md-4 col-6">
-            <div data-aos="slide-up" data-aos-duration="500" class="product-box">
-              <img src="assets/img/product/food/us-mayonise.png" alt="" class="img-fluid">
-              <p>American Garden US Mayonnaise</p>
-            </div>
-          </div>
-          <div class="mb-5 d-flex-full col-lg-3 col-md-4 col-6">
-            <div data-aos="slide-up" data-aos-duration="500" class="product-box">
-              <img src="assets/img/product/food/Ketchup2.jpg" alt="" class="img-fluid">
-              <p>American Garden Ketchup</p>
-            </div>
-          </div>
-          <div class="mb-5 d-flex-full col-lg-3 col-md-4 col-6">
-            <div data-aos="slide-up" data-aos-duration="500" class="product-box">
-              <img src="assets/img/product/paper/paper--cup.jpeg" alt="" class="img-fluid">
-              <p>Paper Cup</p>
-            </div>
-          </div>
-          <div class="mb-5 d-flex-full col-lg-3 col-md-4 col-6">
-            <div data-aos="slide-up" data-aos-duration="500" class="product-box">
-              <img src="assets/img/product/paper/cup-1.png" alt="" class="img-fluid">
-              <p>Paper Cup</p>
-            </div>
-          </div>
-          <div class="mb-5 d-flex-full col-lg-3 col-md-4 col-6">
-            <div data-aos="slide-up" data-aos-duration="500" class="product-box">
-              <img src="assets/img/product/paper/popcorn-2.png" alt="" class="img-fluid">
-              <p>Popcorn box</p>
-            </div>
-          </div>
-          <div class="mb-5 d-flex-full col-lg-3 col-md-4 col-6">
-            <div data-aos="slide-up" data-aos-duration="500" class="product-box">
-              <img src="assets/img/product/plastic/portion cup.jpg" alt="" class="img-fluid">
-              <p>Portion Cup</p>
-            </div>
-          </div>
-          <div class="mb-5 d-flex-full col-lg-3 col-md-4 col-6">
-            <div data-aos="slide-up" data-aos-duration="500" class="product-box">
-              <img src="assets/img/product/plastic/shushi-container.jpg" alt="" class="img-fluid">
-              <p>Shushi Container</p>
-            </div>
-          </div>
-          <div class="mb-5 d-flex-full col-lg-3 col-md-4 col-6">
-            <div data-aos="slide-up" data-aos-duration="500" class="product-box">
-              <img src="assets/img/product/plastic/clear cup.jpg" alt="" class="img-fluid">
-              <p>Clear Cup</p>
-            </div>
-          </div>
-          <div class="mb-5 d-flex-full col-lg-3 col-md-4 col-6">
-            <div data-aos="slide-up" data-aos-duration="500"class="product-box">
-              <img src="assets/img/product/plastic/dart.jpg" alt="" class="img-fluid">
-              <p>Dart Lids</p>
-            </div>
-          </div>
-          <div class="mb-5 d-flex-full col-lg-3 col-md-4 col-6">
-            <div data-aos="slide-up" data-aos-duration="500" class="product-box">
-              <img src="assets/img/product/foamy/foam-box.jpeg" alt="" class="img-fluid">
-              <p>Foam Box</p>
-            </div>
-          </div>
+          @endforeach
+
         </div>
     </div>
     <!-- best selling products end -->
