@@ -18,6 +18,11 @@
     padding: 9px 33px;
     border-radius: 5px;
 }
+.fixed-sidebar .app-sidebar {
+  position: fixed;
+  height: 100vh;
+  overflow-y: scroll !important;
+}
 .msg_box{
     background: #8ba3e1;
     border-radius: 8px;
