@@ -29,6 +29,16 @@
     <!-- style -->
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+    <style>
+        .input__b{
+            padding: 10px;
+            outline: none;
+            border: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -429,13 +439,18 @@
       <div class="row">
           <div class="col-md-7">
               <div class="quote_content">
-                  <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit ?</h3>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing. amet consectetur adipisicing. adipisicing.</p>
+                  <h3>Join to Our Subscription To Get Weekly Updates</h3>
+                  <form action="{{ url('account/add-subscription') }}" method="POST"  enctype="multipart/form-data" class="row px-md-0 px-4">
+                        @csrf
+                        <input class="input__b col-md-3 col-12 me-md-2 me-0" type="text" required name="name" placeholder="Enter Your Name">
+                        <input class="input__b col-md-3 col-12 me-md-2 me-0" type="email" required name="email" placeholder="Enter Your Email">
+                        <button class="input__b col-md-2 col-12" type="submit">Submit</button>
+                  </form>
               </div>
           </div>
           <div class="col-md-5 d-flex justify-content-center align-items-center">
               <div class="quote_btn">
-                  <a class="common_btn" href="#">Get in Touch</a>
+                  <a class="d-md-block d-none common_btn" href="#">Get in Touch</a>
               </div>
           </div>
       </div>
@@ -472,6 +487,25 @@
     <!-- main js -->
     <script src="assets/js/main.js"></script>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        @if($message = session('success'))
+        swal(
+        'Success',
+        "{{$message}}",
+        'success'
+        )
+        @endif
+        @if($error_msg = session('error'))
+        swal(
+        'Error',
+        "{{$error_msg}}",
+        'error'
+        )
+        @endif
+    </script>
 </body>
 
 </html>

@@ -12,6 +12,7 @@ use App\Http\Controllers\AluminiumController;
 use App\Http\Controllers\FoodController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\BestController;
+use App\Http\Controllers\SubscriptionController;
 
 
 /*
@@ -93,4 +94,9 @@ Route::get('account/popular-products', [BestController::class, 'index']);
 Route::get('account/form-best', [BestController::class, 'best_form']);
 Route::post('account/add-best', [BestController::class, 'store']);
 Route::delete('account/delete-best/{id}', [BestController::class, 'destroy']);
+
+
+Route::get('account/subscription', [SubscriptionController::class, 'index']);
+Route::post('account/add-subscription', [SubscriptionController::class, 'store']);
+Route::delete('account/delete-subscription/{id}', [SubscriptionController::class, 'destroy']);
 

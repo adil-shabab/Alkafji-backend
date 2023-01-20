@@ -8,6 +8,10 @@
                       <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-solid fa-box"></i>
                       Dashboard
                   </a>
+                  <a id="subscription_page" class="mt-0" href="{{url('account/subscription')}}">
+                      <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-solid fa-box"></i>
+                      Subscription
+                  </a>
                   <a id="best_page" class="mt-0" href="{{url('account/popular-products')}}">
                       <i style="font-size: 16px;" class="metismenu-icon fa-solid fa-solid fa-box"></i>
                       Popular Products
